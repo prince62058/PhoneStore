@@ -1,6 +1,6 @@
 export default function HeroBanner() {
   return (
-    <div className="hero-banner py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="hero-banner py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="scroll-trigger-element">
@@ -18,6 +18,6 @@ export default function HeroBanner() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
