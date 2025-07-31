@@ -10,11 +10,6 @@ export default function HeroBanner() {
             </div>
           </div>
           <div className="scroll-trigger-element">
-            <img 
-              src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Main%20Banner/D_main-banner_hat0zq.png?tr=w-2048" 
-              alt="Family using mobile device together" 
-              className="rounded-xl shadow-lg w-full h-auto"
-            />
           </div>
         </div>
       </div>
