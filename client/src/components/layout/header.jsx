@@ -17,14 +17,13 @@ export default function Header() {
           </p>
         </div>
       </div>
-
       {/* Main Header */}
       <div className="py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-primary">PhoneShopsy</h1>
+              <h1 className="text-2xl font-light text-[#3846e4]">Ｐｈｏｎｅ ｓｈｏｐｓｙ</h1>
             </div>
 
             {/* Navigation - Desktop */}
