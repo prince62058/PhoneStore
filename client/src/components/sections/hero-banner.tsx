@@ -11,7 +11,7 @@ export default function HeroBanner() {
           </div>
           <div className="scroll-trigger-element">
             <img 
-              src="/attached_assets/screenshot-1753943082307.png" 
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
               alt="Family using mobile device together" 
               className="rounded-xl shadow-lg w-full h-auto"
             />

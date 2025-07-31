@@ -36,24 +36,24 @@ export class MemStorage implements IStorage {
   }
 
   private initializeData() {
-    // Initialize categories
+    // Initialize categories with real Croma category images
     const phoneCategories: InsertCategory[] = [
       {
         name: "iPhones",
         slug: "iphones",
-        imageUrl: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Choose%20Your%20Type/3split_PCP_righttype_iPhone_15May2023_dfaihn.png?tr=w-400",
         description: "Experience the power of iOS"
       },
       {
         name: "Android Phones",
         slug: "android-phones", 
-        imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Choose%20Your%20Type/3split_PCP_righttype_Android_15May2023_m5mclk.png?tr=w-400",
         description: "Endless possibilities with Android"
       },
       {
         name: "Feature Phones",
         slug: "feature-phones",
-        imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Choose%20Your%20Type/3split_PCP_righttype_Feature_15May2023_say3ow.png?tr=w-400",
         description: "Simple and reliable communication"
       }
     ];

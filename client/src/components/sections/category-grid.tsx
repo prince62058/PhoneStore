@@ -32,7 +32,7 @@ export default function CategoryGrid({
               className="product-card bg-white rounded-xl shadow-lg overflow-hidden scroll-trigger-element"
             >
               <img 
-                src={item.imageUrl || item.logoUrl} 
+                src={item.imageUrl || item.logoUrl || "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"} 
                 alt={item.name} 
                 className="w-full h-48 object-cover"
               />

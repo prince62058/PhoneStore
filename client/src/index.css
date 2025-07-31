@@ -77,8 +77,8 @@
   }
   
   .scroll-trigger-element {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0px);
   }
   
   .croma-green {

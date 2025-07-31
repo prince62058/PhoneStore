@@ -5,6 +5,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export const initScrollAnimations = () => {
+  // Set initial visibility for all elements
+  gsap.set('.scroll-trigger-element', { opacity: 1, y: 0 });
+  gsap.set('.product-card', { opacity: 1, y: 0 });
+  
   // Animate scroll-trigger elements
   gsap.utils.toArray('.scroll-trigger-element').forEach((element: any, index) => {
     gsap.fromTo(element, 
