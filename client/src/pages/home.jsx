@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { initPageAnimations } from "@/lib/animations";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import HeroBanner from "@/components/sections/hero-banner";
 import ProductGrid from "@/components/sections/product-grid";
 import CategoryGrid from "@/components/sections/category-grid";
 
@@ -109,7 +108,7 @@ export default function Home() {
         </div>
       </div>
 
-      <HeroBanner />
+      
 
       {/* Product Description */}
       <section className="py-12 bg-gray-900 dark:bg-gray-800 text-white">
