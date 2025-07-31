@@ -50,6 +50,10 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
+  --croma-green: hsl(142, 71%, 45%);
+  --croma-dark-green: hsl(142, 71%, 35%);
+  --croma-black: hsl(240, 10%, 3.9%);
+  --croma-gray: hsl(240, 3.7%, 15.9%);
 }
 
 @layer base {

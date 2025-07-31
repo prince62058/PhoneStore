@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Search, User, ShoppingCart, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,6 +48,7 @@ export default function Header() {
 
           {/* User Actions */}
           <div className="flex items-center space-x-4">
+            <ThemeToggle />
             <Button 
               variant="ghost" 
               size="sm" 

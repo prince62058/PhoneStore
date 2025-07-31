@@ -68,22 +68,22 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
       
       {/* Breadcrumb */}
-      <nav className="bg-gray-100 py-3">
+      <nav className="bg-gray-100 dark:bg-gray-800 py-3">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm">
-            <a href="#" className="text-gray-600 hover:text-primary">Phones & Wearables</a>
+            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary">Phones & Wearables</a>
             <span className="text-gray-400">›</span>
-            <span className="text-gray-900 font-medium">Mobile Phones</span>
+            <span className="text-gray-900 dark:text-white font-medium">Mobile Phones</span>
           </div>
         </div>
       </nav>
 
       {/* Page Title */}
-      <div className="bg-gray-900 text-white py-8">
+      <div className="bg-gray-900 dark:bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold">Mobile Phones</h1>
         </div>
@@ -92,11 +92,11 @@ export default function Home() {
       <HeroBanner />
 
       {/* Product Description */}
-      <section className="py-12 bg-gray-900 text-white">
+      <section className="py-12 bg-gray-900 dark:bg-gray-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h2 className="text-2xl font-bold mb-4">Treat yourself to a new Mobile Phone</h2>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 dark:text-gray-400 leading-relaxed">
               Experience the world at your fingertips! Work, socialise, book a ride, play games, listen to music, 
               watch your favourite shows, take a photo, or simply make a call! Buy a Mobile Phone from Croma that 
               does it all and then some.
@@ -114,7 +114,7 @@ export default function Home() {
       <ProductGrid 
         title="Most Popular Smartphones" 
         products={popularProducts}
-        className="py-16 bg-gray-50"
+        className="py-16 bg-gray-50 dark:bg-gray-800"
       />
 
       <ProductGrid 
@@ -127,7 +127,7 @@ export default function Home() {
       <CategoryGrid 
         title="Choose Your Type" 
         items={categories}
-        className="py-16 bg-gray-50"
+        className="py-16 bg-gray-50 dark:bg-gray-800"
         gridCols="grid-cols-1 md:grid-cols-3"
       />
 
@@ -141,7 +141,7 @@ export default function Home() {
       <CategoryGrid 
         title="Pick Your Smartphone Brand" 
         items={brands}
-        className="py-16 bg-gray-50"
+        className="py-16 bg-gray-50 dark:bg-gray-800"
         gridCols="grid-cols-2 md:grid-cols-4"
       />
 

@@ -18,7 +18,7 @@ export default function ProductGrid({
   return (
     <section className={cn("py-16", className)}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 scroll-trigger-element">{title}</h2>
+        <h2 className="text-3xl font-bold mb-8 scroll-trigger-element text-gray-900 dark:text-white">{title}</h2>
         <div className={cn("grid gap-6", gridCols)}>
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />

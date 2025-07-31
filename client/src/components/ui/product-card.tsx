@@ -11,16 +11,16 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="product-card bg-white rounded-xl shadow-lg overflow-hidden scroll-trigger-element">
+    <div className="product-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden scroll-trigger-element">
       <img 
         src={product.imageUrl} 
         alt={product.name} 
         className="w-full h-48 object-cover"
       />
       <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
+        <h3 className="font-semibold text-lg mb-2 text-gray-900 dark:text-white">{product.name}</h3>
         {product.ram && product.storage && product.color && (
-          <p className="text-gray-600 text-sm mb-3">
+          <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
             {product.ram} RAM, {product.storage}, {product.color}
           </p>
         )}
@@ -30,7 +30,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               {formatPrice(product.price)}
             </span>
             {product.originalPrice && (
-              <span className="text-gray-500 line-through text-sm block">
+              <span className="text-gray-500 dark:text-gray-400 line-through text-sm block">
                 {formatPrice(product.originalPrice)}
               </span>
             )}
