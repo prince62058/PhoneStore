@@ -1,0 +1,54 @@
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+
+interface CategoryItem {
+  name: string;
+  imageUrl: string;
+  description?: string;
+  logoUrl?: string;
+}
+
+interface CategoryGridProps {
+  title: string;
+  items: CategoryItem[];
+  className?: string;
+  gridCols?: string;
+}
+
+export default function CategoryGrid({ 
+  title, 
+  items, 
+  className = "", 
+  gridCols = "grid-cols-1 md:grid-cols-3" 
+}: CategoryGridProps) {
+  return (
+    <section className={cn("py-16", className)}>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 scroll-trigger-element">{title}</h2>
+        <div className={cn("grid gap-6", gridCols)}>
+          {items.map((item, index) => (
+            <div 
+              key={index} 
+              className="product-card bg-white rounded-xl shadow-lg overflow-hidden scroll-trigger-element"
+            >
+              <img 
+                src={item.imageUrl || item.logoUrl} 
+                alt={item.name} 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2">{item.name}</h3>
+                {item.description && (
+                  <p className="text-gray-600 mb-4">{item.description}</p>
+                )}
+                <Button className="bg-primary text-white hover:bg-primary/90">
+                  {title.includes("Brand") ? `Shop ${item.name}` : "Explore"}
+                </Button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
