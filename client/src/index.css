@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(142, 71%, 45%);
+  --primary: hsl(271, 81%, 56%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -23,8 +23,8 @@
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
-  --croma-green: hsl(142, 71%, 45%);
-  --croma-dark-green: hsl(142, 71%, 35%);
+  --croma-purple: hsl(271, 81%, 56%);
+  --croma-dark-purple: hsl(271, 81%, 46%);
   --croma-black: hsl(0, 0%, 0%);
   --croma-gray: hsl(0, 0%, 96%);
 }
@@ -40,7 +40,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(142, 71%, 45%);
+  --primary: hsl(271, 81%, 56%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -50,8 +50,8 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
-  --croma-green: hsl(142, 71%, 45%);
-  --croma-dark-green: hsl(142, 71%, 35%);
+  --croma-purple: hsl(271, 81%, 56%);
+  --croma-dark-purple: hsl(271, 81%, 46%);
   --croma-black: hsl(240, 10%, 3.9%);
   --croma-gray: hsl(240, 3.7%, 15.9%);
 }
@@ -85,16 +85,16 @@
     transform: translateY(0px);
   }
   
-  .croma-green {
-    color: var(--croma-green);
+  .croma-purple {
+    color: var(--croma-purple);
   }
   
-  .bg-croma-green {
-    background-color: var(--croma-green);
+  .bg-croma-purple {
+    background-color: var(--croma-purple);
   }
   
-  .bg-croma-dark-green {
-    background-color: var(--croma-dark-green);
+  .bg-croma-dark-purple {
+    background-color: var(--croma-dark-purple);
   }
   
   .bg-croma-black {
