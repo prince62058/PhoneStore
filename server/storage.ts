@@ -1,6 +1,11 @@
 import { randomUUID } from "crypto";
 
 export class MemStorage {
+  users;
+  products;
+  categories;
+  brands;
+
   constructor() {
     this.users = new Map();
     this.products = new Map();
@@ -92,8 +97,8 @@ export class MemStorage {
         name: "Apple iPhone 16 (128GB, Teal)", 
         brand: "Apple",
         model: "iPhone 16",
-        price: "74900.00",
-        originalPrice: "79900.00",
+        price: "79900.00",
+        originalPrice: "84900.00",
         category: "smartphones",
         subcategory: "iphones",
         ram: "8GB",
@@ -109,8 +114,8 @@ export class MemStorage {
         name: "realme 14x 5G (6GB RAM, 128GB, Golden Glow)",
         brand: "Realme", 
         model: "14x 5G",
-        price: "14999.00",
-        originalPrice: "16999.00",
+        price: "16289.00",
+        originalPrice: "18999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "6GB",
@@ -125,8 +130,8 @@ export class MemStorage {
         name: "vivo T3 Lite 5G (6GB RAM, 128GB, Vibrant Green)",
         brand: "Vivo",
         model: "T3 Lite 5G", 
-        price: "11499.00",
-        originalPrice: "12499.00",
+        price: "24999.00",
+        originalPrice: "27999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "6GB",
@@ -142,7 +147,7 @@ export class MemStorage {
         brand: "Nothing",
         model: "CMF Phone 1 5G",
         price: "15999.00", 
-        originalPrice: "27999.00",
+        originalPrice: "19999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "6GB",
@@ -159,7 +164,7 @@ export class MemStorage {
         brand: "Redmi",
         model: "13 5G",
         price: "12499.00",
-        originalPrice: "17999.00",
+        originalPrice: "15999.00",
         category: "smartphones", 
         subcategory: "android",
         ram: "6GB",
@@ -174,8 +179,8 @@ export class MemStorage {
         name: "Samsung Galaxy S25 Edge 5G (12GB RAM, 512GB, Titanium Silver)",
         brand: "Samsung",
         model: "Galaxy S25 Edge 5G",
-        price: "89999.00",
-        originalPrice: "99999.00",
+        price: "90000.00",
+        originalPrice: "95999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "12GB",
@@ -190,8 +195,8 @@ export class MemStorage {
         name: "Oppo Reno 14 5G (8GB RAM, 256GB, Forest Green)",
         brand: "Oppo",
         model: "Reno 14 5G",
-        price: "32999.00",
-        originalPrice: "36999.00",
+        price: "34999.00",
+        originalPrice: "38999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "8GB",
@@ -207,7 +212,7 @@ export class MemStorage {
         brand: "Nothing",
         model: "Phone 3 5G",
         price: "45999.00",
-        originalPrice: "49999.00",
+        originalPrice: "52999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "12GB",
