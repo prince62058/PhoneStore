@@ -34,37 +34,37 @@ export default function Home() {
   const useCases = [
     {
       name: "Content Creation",
-      imageUrl: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Your%20Smartphone,%20Your%20Use/4split_PCP_smartphonesfor_content-creation_15May2023_zczhv8.png?tr=w-300"
     },
     {
       name: "Gaming",
-      imageUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/Bugs/01012023/040423/mob%20pcp/4split_PCP_smartphonesfor_Gaming_25Oct2023_w5stjf.png?tr=w-300"
     },
     {
       name: "Productivity",
-      imageUrl: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/Bugs/01012023/040423/mob%20pcp/4split_PCP_smartphonesfor_Productivity_25Oct2023_seszo7.png?tr=w-300"
     },
     {
       name: "5G Network",
-      imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/Bugs/01012023/040423/mob%20pcp/4split_PCP_smartphonesfor_5GNetwork_25Oct2023_i1z2wc.png?tr=w-300"
     },
     {
       name: "Daylong Use",
-      imageUrl: "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/Bugs/01012023/040423/mob%20pcp/4split_PCP_smartphonesfor_Daylonguse_25Oct2023_hilmcr.png?tr=w-300"
     },
     {
       name: "Binge Watching",
-      imageUrl: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"
+      imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/Bugs/01012023/040423/mob%20pcp/4split_PCP_smartphonesfor_Bingewatching_25Oct2023_ofkw6y.png?tr=w-300"
     }
   ];
 
   const budgetRanges = [
-    { name: "Below ₹5K", imageUrl: "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" },
-    { name: "₹5K - ₹10K", imageUrl: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" },
-    { name: "₹10K - ₹20K", imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" },
-    { name: "₹20K - ₹30K", imageUrl: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" },
-    { name: "₹30K - ₹50K", imageUrl: "https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" },
-    { name: "Above ₹50K", imageUrl: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" }
+    { name: "Below ₹5K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_below5K_15May2023_k8wvhd.png?tr=w-300" },
+    { name: "₹5K - ₹10K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_5Kto10K_15May2023_xm9iqq.png?tr=w-300" },
+    { name: "₹10K - ₹20K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_10Kto20K_15May2023_fuop6n.png?tr=w-300" },
+    { name: "₹20K - ₹30K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_20Kto30K_15May2023_yrfh2g.png?tr=w-300" },
+    { name: "₹30K - ₹50K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_30Kto50K_15May2023_qspz8w.png?tr=w-300" },
+    { name: "Above ₹50K", imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/For%20Your%20Budget/4Split_PCP_shopbyprice_above50K_15May2023_bznsjt.png?tr=w-300" }
   ];
 
   return (

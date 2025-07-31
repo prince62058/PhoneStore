@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 interface CategoryItem {
   name: string;
-  imageUrl: string;
-  description?: string;
+  imageUrl?: string;
+  description?: string | null;
   logoUrl?: string;
 }
 

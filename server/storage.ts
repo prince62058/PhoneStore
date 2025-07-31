@@ -59,43 +59,63 @@ export class MemStorage implements IStorage {
     ];
 
     phoneCategories.forEach(cat => {
-      const category: Category = { ...cat, id: randomUUID() };
+      const category: Category = { ...cat, id: randomUUID(), description: cat.description || null };
       this.categories.set(category.id, category);
     });
 
-    // Initialize brands
+    // Initialize brands with authentic Croma brand images
     const phoneBrands: InsertBrand[] = [
       {
         name: "Apple",
-        logoUrl: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
-        description: "Innovation at its finest"
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/PCP/23rd%20June/4spli_PCP_shopbybrand_apple_23june2023_sk5llx.png?tr=w-300",
+        description: "Think Different"
       },
       {
         name: "Samsung",
-        logoUrl: "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
-        description: "Galaxy of possibilities"
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/LP%20Page%20Banners/2025/PCP/Mobile/06022025/Desktop/PCP_3split_flagship_Samsung_6Feb2025_lezfgc.png?tr=w-300",
+        description: "Do what you can't"
       },
       {
         name: "Vivo",
-        logoUrl: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
-        description: "Camera and music"
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/NEW%20PCP%20DESIGN%20-%20OCT/Updated/4spli_PCP_shopbybrand_vivo_27sep2022_knaawj.png?tr=w-300",
+        description: "Camera & Music"
       },
       {
         name: "OnePlus",
-        logoUrl: "https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
-        description: "Never settle"
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/NEW%20PCP%20DESIGN%20-%20OCT/Updated/4spli_PCP_shopbybrand_oneplus_27sep2022_bdlvsd.png?tr=w-300",
+        description: "Never Settle"
+      },
+      {
+        name: "Nothing",
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/PCP/Mobile%20PCP/18-10-2023/4spli_PCP_shopbybrand_nothing_180ct2023_xy128n.png?tr=w-300",
+        description: "Tech with a human touch"
+      },
+      {
+        name: "Oppo",
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/NEW%20PCP%20DESIGN%20-%20OCT/Updated/4spli_PCP_shopbybrand_oppo_27sep2022_aga789.png?tr=w-300",
+        description: "Inspiration Ahead"
+      },
+      {
+        name: "Realme",
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/4spli_PCP_shopbybrand_realme_3nov2022_u4p8mv.png?tr=w-300",
+        description: "Dare to leap"
+      },
+      {
+        name: "Xiaomi",
+        logoUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/NEW%20PCP%20DESIGN%20-%20OCT/Updated/4spli_PCP_shopbybrand_mi_27sep2022_tpwcdb.png?tr=w-300",
+        description: "Make it happen"
       }
     ];
 
     phoneBrands.forEach(brand => {
-      const newBrand: Brand = { ...brand, id: randomUUID() };
+      const newBrand: Brand = { ...brand, id: randomUUID(), description: brand.description || null };
       this.brands.set(newBrand.id, newBrand);
     });
 
-    // Initialize products
+    // Initialize products with authentic Croma data
     const sampleProducts: InsertProduct[] = [
       {
-        name: "Apple iPhone 16",
+        name: "Apple iPhone 16 (128GB, Teal)", 
         brand: "Apple",
         model: "iPhone 16",
         price: "74900.00",
@@ -105,32 +125,32 @@ export class MemStorage implements IStorage {
         ram: "8GB",
         storage: "128GB",
         color: "Teal",
-        imageUrl: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/309695_0_peotee.png?tr=w-300",
         features: ["A18 Bionic chip", "48MP Camera", "Face ID", "5G"],
         isBestseller: true,
         isPopular: true,
-        description: "The latest iPhone with advanced features"
+        description: "Experience the latest iPhone with advanced A18 Bionic chip and professional camera capabilities"
       },
       {
-        name: "realme 14x 5G",
-        brand: "Realme",
+        name: "realme 14x 5G (6GB RAM, 128GB, Golden Glow)",
+        brand: "Realme", 
         model: "14x 5G",
         price: "14999.00",
         originalPrice: "16999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "6GB",
-        storage: "128GB",
+        storage: "128GB", 
         color: "Golden Glow",
-        imageUrl: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/312422_0_hxo2mn.png?tr=w-300",
         features: ["5G Ready", "50MP Camera", "5000mAh Battery"],
         isBestseller: true,
-        description: "Affordable 5G smartphone"
+        description: "Affordable 5G smartphone with exceptional battery life"
       },
       {
-        name: "vivo T3 Lite 5G",
+        name: "vivo T3 Lite 5G (6GB RAM, 128GB, Vibrant Green)",
         brand: "Vivo",
-        model: "T3 Lite 5G",
+        model: "T3 Lite 5G", 
         price: "11499.00",
         originalPrice: "12499.00",
         category: "smartphones",
@@ -138,46 +158,46 @@ export class MemStorage implements IStorage {
         ram: "6GB",
         storage: "128GB",
         color: "Vibrant Green",
-        imageUrl: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/307900_0_gtdiuq.png?tr=w-300",
         features: ["5G Connectivity", "AI Photography", "Fast Charging"],
         isBestseller: true,
-        description: "Budget-friendly 5G phone"
+        description: "Budget-friendly 5G phone with AI-powered photography"
       },
       {
-        name: "Nothing CMF Phone 1 5G",
+        name: "Nothing CMF Phone 1 5G (6GB RAM, 128GB, Black)",
         brand: "Nothing",
         model: "CMF Phone 1 5G",
-        price: "15999.00",
+        price: "15999.00", 
         originalPrice: "27999.00",
         category: "smartphones",
         subcategory: "android",
         ram: "6GB",
         storage: "128GB",
         color: "Black",
-        imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/308330_0_li240c.png?tr=w-300",
         features: ["Transparent Design", "50MP Camera", "Nothing OS"],
         isBestseller: true,
         isPopular: true,
-        description: "Innovative transparent design"
+        description: "Innovative transparent design with Nothing OS experience"
       },
       {
-        name: "Redmi 13 5G",
+        name: "Redmi 13 5G (6GB RAM, 128GB, Orchid Pink)",
         brand: "Redmi",
         model: "13 5G",
         price: "12499.00",
         originalPrice: "17999.00",
-        category: "smartphones",
+        category: "smartphones", 
         subcategory: "android",
         ram: "6GB",
         storage: "128GB",
         color: "Orchid Pink",
-        imageUrl: "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/307691_0_jtjpit.png?tr=w-300",
         features: ["5G Ready", "108MP Camera", "MIUI"],
         isBestseller: true,
-        description: "Feature-packed affordable phone"
+        description: "Feature-packed affordable phone with MIUI experience"
       },
       {
-        name: "Samsung Galaxy S25 Edge 5G",
+        name: "Samsung Galaxy S25 Edge 5G (12GB RAM, 512GB, Titanium Silver)",
         brand: "Samsung",
         model: "Galaxy S25 Edge 5G",
         price: "89999.00",
@@ -186,14 +206,14 @@ export class MemStorage implements IStorage {
         subcategory: "android",
         ram: "12GB",
         storage: "512GB",
-        color: "Titanium Silver",
-        imageUrl: "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        color: "Titanium Silver", 
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/LP%20Page%20Banners/2025/PCP/All%20Folder/18072025/Mobile/PCP_3split_WatchOut_Samsung1_18July25_4ifBcchDA7.png?tr=w-300",
         features: ["Snapdragon 8 Gen 3", "200MP Camera", "S Pen", "5G"],
         isPopular: true,
-        description: "Premium flagship smartphone"
+        description: "Premium flagship smartphone with S Pen functionality"
       },
       {
-        name: "Oppo Reno 14 5G",
+        name: "Oppo Reno 14 5G (8GB RAM, 256GB, Forest Green)",
         brand: "Oppo",
         model: "Reno 14 5G",
         price: "32999.00",
@@ -203,31 +223,44 @@ export class MemStorage implements IStorage {
         ram: "8GB",
         storage: "256GB",
         color: "Forest Green",
-        imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/LP%20Page%20Banners/2025/PCP/All%20Folder/18072025/Mobile/PCP_2Split_WatchOut_Oppo_18July25_Ah-e9v18xR.png?tr=w-300",
         features: ["Portrait Photography", "ColorOS", "Fast Charging"],
         isPopular: true,
-        description: "Photography-focused smartphone"
+        description: "Photography-focused smartphone with advanced portrait features"
       },
       {
-        name: "Vivo V40e 5G",
-        brand: "Vivo",
-        model: "V40e 5G",
-        price: "28999.00",
-        originalPrice: "31999.00",
+        name: "Nothing Phone 3 5G (12GB RAM, 256GB, Black)",
+        brand: "Nothing",
+        model: "Phone 3 5G",
+        price: "45999.00",
+        originalPrice: "49999.00",
         category: "smartphones",
         subcategory: "android",
-        ram: "8GB",
-        storage: "128GB",
-        color: "Royal Bronze",
-        imageUrl: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-        features: ["Aura Light Portrait", "5000mAh Battery", "Funtouch OS"],
+        ram: "12GB",
+        storage: "256GB",
+        color: "Black",
+        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/CMS/LP%20Page%20Banners/2025/PCP/All%20Folder/18072025/Mobile/PCP_2Split_WatchOut_nothing_18July25_zamKOjmaRB.png?tr=w-300",
+        features: ["Glyph Interface", "50MP Dual Camera", "Nothing OS 3.0"],
         isPopular: true,
-        description: "Stylish design with great cameras"
+        description: "Revolutionary design with unique Glyph interface"
       }
     ];
 
     sampleProducts.forEach(product => {
-      const newProduct: Product = { ...product, id: randomUUID(), inStock: true };
+      const newProduct: Product = { 
+        ...product, 
+        id: randomUUID(), 
+        inStock: true,
+        color: product.color || null,
+        description: product.description || null,
+        originalPrice: product.originalPrice || null,
+        subcategory: product.subcategory || null,
+        ram: product.ram || null,
+        storage: product.storage || null,
+        features: product.features || null,
+        isPopular: product.isPopular || false,
+        isBestseller: product.isBestseller || false
+      };
       this.products.set(newProduct.id, newProduct);
     });
   }
@@ -279,7 +312,20 @@ export class MemStorage implements IStorage {
 
   async createProduct(insertProduct: InsertProduct): Promise<Product> {
     const id = randomUUID();
-    const product: Product = { ...insertProduct, id, inStock: true, isPopular: false, isBestseller: false };
+    const product: Product = { 
+      ...insertProduct, 
+      id, 
+      inStock: true, 
+      isPopular: false, 
+      isBestseller: false,
+      color: insertProduct.color || null,
+      description: insertProduct.description || null,
+      originalPrice: insertProduct.originalPrice || null,
+      subcategory: insertProduct.subcategory || null,
+      ram: insertProduct.ram || null,
+      storage: insertProduct.storage || null,
+      features: insertProduct.features || null
+    };
     this.products.set(id, product);
     return product;
   }
@@ -290,7 +336,7 @@ export class MemStorage implements IStorage {
 
   async createCategory(insertCategory: InsertCategory): Promise<Category> {
     const id = randomUUID();
-    const category: Category = { ...insertCategory, id };
+    const category: Category = { ...insertCategory, id, description: insertCategory.description || null };
     this.categories.set(id, category);
     return category;
   }
@@ -301,7 +347,7 @@ export class MemStorage implements IStorage {
 
   async createBrand(insertBrand: InsertBrand): Promise<Brand> {
     const id = randomUUID();
-    const brand: Brand = { ...insertBrand, id };
+    const brand: Brand = { ...insertBrand, id, description: insertBrand.description || null };
     this.brands.set(id, brand);
     return brand;
   }
