@@ -234,7 +234,7 @@ export class MemStorage {
         ram: "6GB",
         storage: "128GB",
         color: "Black",
-        imageUrl: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/310298_0_vfrldz.png?tr=w-300",
+        imageUrl: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16e-1.jpg",
         features: ["A17 Pro chip", "48MP Camera", "Face ID", "5G"],
         isBestseller: true,
         isPopular: true,
